@@ -14,33 +14,20 @@ function App() {
 
     return (
         <div>
-            <div className="logo-bar">
-                <a href="#" className="logo">
-                    <img src="http://bnx.oa.gg/img/logo.gif" alt=""/>
-                </a>
-            </div>
-
-            <div className="menu-bar con">
-                <nav className="menu-box">
-                    <ul class="row">
-                        <li className="cell"><a href="#">BRAND</a></li>
-                        <li className="cell"><a href="#">VISUAL</a></li>
-                        <li className="cell"><a href="#">STYLE</a></li>
-                        <li className="cell"><a href="#">MEDIA</a></li>
-                        <li className="cell"><a href="#">NEWS</a></li>
-                        <li className="cell"><a href="#">STORE</a></li>
-                        <li className="cell"><a href="#">CUSTOMER</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div className="top-bn-box con">
-                <div className="img-box">
-                    <img src="http://bnx.oa.gg/img/20160913AM105509_3718.jpg" alt=""/>
+            <header>
+                <div className='masterHeader'>
+                    <div className='headerBox'>
+                        PHY Portfolio
+                    </div>
+                    <div className='main_nav'>
+                        <Button variant="text" size="large"><span className='sub_title'>About me</span></Button>
+                        <Button variant="text" size='large'><span className='sub_title'>Skill</span></Button>
+                        <Button variant="text" size='large'><span className='sub_title'>Project</span></Button>
+                        <Button variant="text" size='large'><span className='sub_title'>Career</span></Button>
+                    </div>
                 </div>
-            </div>
-
-            <div>
+            </header>
+            <div className='content'>
                 백엔드에서 가져온 데이터입니다 : {hello}
             </div>
         </div>

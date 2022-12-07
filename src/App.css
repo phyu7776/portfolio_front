@@ -1,93 +1,38 @@
-/* 폰트적용 */
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-html {
-    font-family: "Noto Sans KR", sans-serif;
+body {
+    background-color: #0A1929;
+    color: white;
 }
 
-/* 노말라이즈 */
+.masterHeader {
+    width: 100%;
+    padding: 25px;
+    max-width: 60%;
+    font-weight: bold;
+    font-size: 30px;
+    position: fixed;
 
-body , ul , li {
-    margin:0;
-    padding:0;
-    list-style:none;
+    margin : 0 auto;
+    top : 0;
+    right: 0;
+    left: 0;
 }
 
-a {
-    color:inherit;
-    text-decoration:none;
+.headerBox{
+    display: inline-block;
 }
 
-/* 노말라이즈 끝 */
-/* 라이브러리 */
-
-.con {
-    max-width:1000px;
+.main_nav{
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
 }
 
-.cell {
-    float:left;
+.masterHeader .sub_title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
-.row::after {
-    content:"";
-    display:block;
-    clear:both;
+.content {
+    height: 10000000px;
 }
-
-.img-box > img {
-    display:block;
-    width:100%;
-}
-
-/* 라이브러리 끝 */
-/* 커스텀 */
-
-.logo-bar {
-    text-align:center;
-    margin-top:20px;
-}
-
-.menu-bar {
-    margin:10px 0;
-}
-
-.menu-box > ul > li {
-    width:calc(100%/7);
-}
-
-.menu-box > ul > li > a {
-    display:block;
-    text-align:center;
-    font-weight:bold;
-    position:relative;
-}
-
-.menu-box > ul > li > a::before,
-.menu-box > ul > li > a::after  {
-    content:"";
-    width:1px;
-    height:13px;
-    top:50%;
-    left:0;
-    transform:translateY(-50%);
-    background-color:black;
-    position:absolute;
-}
-
-.menu-box > ul > li > a::after {
-    left:auto;
-    right:0;
-}
-
-.menu-box > ul > li:first-child > a::before,
-.menu-box > ul > li:last-child > a::after  {
-    width:2px;
-}
-
-.con {
-    margin-left:auto;
-    margin-right:auto;
-}
-
-/* 커스텀 끝 */
