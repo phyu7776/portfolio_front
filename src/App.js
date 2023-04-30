@@ -1,34 +1,31 @@
-import React, {useEffect, useState} from 'react';
-import Button from '@mui/material/Button';
+import React from 'react';
 import './App.css';
 import axios from 'axios';
+import HambergerButton from './components/HambergerButton';
 
 function App() {
-    const [hello, setHello] = useState('')
+    // const [hello, setHello] = useState();
+    // useEffect(() => {
+        //     axios.get('/api/test')
+        //     .then(response => setHello(response.data))
+        //     .catch(error => console.log(error))
+        // }, []);
 
-    useEffect(() => {
-        axios.get('/api/test')
-        .then(response => setHello(response.data))
-        .catch(error => console.log(error))
-    }, []);
-
-    return (
+        const MenuList = ["About me", "Skill", "Project", "Career"];
+        return (
         <div>
             <header>
                 <div className='masterHeader'>
-                    <div className='headerBox'>
-                        PHY Portfolio
+                    <div className='headerTitle'>
+                        Portfolio
                     </div>
-                    <div className='main_nav'>
-                        <Button variant="text" size="large"><span className='sub_title'>About me</span></Button>
-                        <Button variant="text" size='large'><span className='sub_title'>Skill</span></Button>
-                        <Button variant="text" size='large'><span className='sub_title'>Project</span></Button>
-                        <Button variant="text" size='large'><span className='sub_title'>Career</span></Button>
-                    </div>
+                    <HambergerButton
+                        menuList={MenuList}
+                    />
                 </div>
             </header>
-            <div className='content'>
-                백엔드에서 가져온 데이터입니다 : {hello}
+            <div className='haederBackgournd'>
+                <div className='headContent'>하잉</div>
             </div>
         </div>
     );
