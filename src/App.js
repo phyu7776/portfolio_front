@@ -25,7 +25,10 @@ function App() {
                 </div>
             </header>
             <div className='haederBackgournd'>
-                <div className='headContent'>하잉</div>
+                <div className='headContent'> 
+                    안녕하세요 <br/> 박환용 입니다.
+                    <hr className='separate'/>
+                </div>
             </div>
         </div>
     );
