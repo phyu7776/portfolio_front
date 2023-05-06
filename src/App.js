@@ -23,12 +23,19 @@ function App() {
                         menuList={MenuList}
                     />
                 </div>
-            </header>
-            <div className='haederBackgournd'>
+                <div className='haederBackgournd'>
                 <div className='headContent'> 
                     안녕하세요 <br/> 박환용 입니다.
                     <hr className='separate'/>
+                    <div className='fsiz-20'>
+                        어디서든 필요하고 쓰임을 받는 개발자가 되려 노력하고 <br/>
+                        어느 곳에서든 즐겁게 개발하는 개발자 입니다.
+                    </div>
                 </div>
+            </div>
+            </header>
+            <div>
+
             </div>
         </div>
     );

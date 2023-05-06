@@ -105,7 +105,7 @@ body{
 }
 
 .headContent {
-    padding: calc(150px + 70px) 75px 65px;
+    padding: calc(150px + 70px) 75px 130px;
     text-align: center;
     font-weight: bold;
     font-size: 50px;
@@ -118,4 +118,8 @@ body{
     border: none;
     border-top: 2px solid #f4623a;
     opacity: 1;
+}
+
+.fsiz-20 {
+    font-size: 20px;
 }
